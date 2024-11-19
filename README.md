@@ -88,13 +88,12 @@
     });
 
     // Al hacer clic en el botón "No" (primero)
-    let noButtonClickCount = 0;
     document.getElementById('noButton').addEventListener('click', function(event) {
       event.preventDefault();
-      noButtonClickCount++;
+      // Borra todo y muestra solo el mensaje de "¿Segura?" y las opciones
       toggleVisibility(
-        ['initialMessage', 'initialButtons'],  // Ocultar el mensaje y botones iniciales
-        ['sureMessage', 'sureButtons']         // Mostrar el mensaje de confirmación
+        ['initialMessage', 'initialButtons', 'thankYouMessage', 'thankYouButtons'],  // Ocultar todo lo demás
+        ['sureMessage', 'sureButtons']  // Mostrar solo el mensaje de confirmación
       );
     });
 
@@ -110,8 +109,11 @@
     // Al hacer clic en el botón "No" (segundo)
     document.getElementById('noButton2').addEventListener('click', function(event) {
       event.preventDefault();
-      // Aquí podrías agregar una acción si quieres manejar el caso de "No" nuevamente
-      alert("Ok, lo pensaré mejor...");
+      // Borra todo y muestra solo el mensaje de "¿Segura?" nuevamente
+      toggleVisibility(
+        ['thankYouMessage', 'thankYouButtons'],  // Ocultar el mensaje de agradecimiento
+        ['sureMessage', 'sureButtons']  // Mostrar nuevamente el mensaje y botones de confirmación
+      );
     });
   </script>
 </body>
