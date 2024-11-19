@@ -41,7 +41,7 @@
 </head>
 <body>
   <h1>Un Mensaje para Ti</h1>
-  <img src="https://via.placeholder.com/300.png?text=Oso+Perdón" alt="Oso pidiendo perdón">
+  <img src=["https://via.placeholder.com/300.png?text=Oso+Perdón](https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fideas%2Fgif-ositos-de-amor%2F944575577913%2F&psig=AOvVaw2PbMoccGYgsn7vSClKnw-6&ust=1732066042401000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMCh2vue54kDFQAAAAAdAAAAABAI)" alt="Oso pidiendo perdón">
   <div class="message">¿Me perdonas?</div>
   <div class="buttons">
     <a href="https://example.com/si" class="button">Sí</a>
