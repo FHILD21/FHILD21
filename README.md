@@ -3,25 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿Me perdonas?</title>
+  <title>Mensaje Especial</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-      padding: 20px;
-    }
-    img {
-      max-width: 300px;
-      margin-top: 20px;
-    }
     .message {
       font-size: 24px;
       margin: 20px;
       font-weight: bold;
+      text-align: center;
     }
     .buttons {
       margin-top: 20px;
+      text-align: center;
     }
     .button {
       font-size: 18px;
@@ -40,12 +32,38 @@
   </style>
 </head>
 <body>
-  <h1>Un Mensaje para Ti</h1>
-  <img src=["https://via.placeholder.com/300.png?text=Oso+Perdón](https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fideas%2Fgif-ositos-de-amor%2F944575577913%2F&psig=AOvVaw2PbMoccGYgsn7vSClKnw-6&ust=1732066042401000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMCh2vue54kDFQAAAAAdAAAAABAI)" alt="Oso pidiendo perdón">
-  <div class="message">¿Me perdonas?</div>
-  <div class="buttons">
-    <a href="https://example.com/si" class="button">Sí</a>
-    <a href="https://example.com/no" class="button no">No</a>
+  <div style="text-align: center;">
+    <h1>Un Mensaje para Ti MI FUTURA ESPOSITA💓</h1>
   </div>
+  
+  <img src="https://i.imgur.com/JHTocYe.gif" alt="Oso pidiendo perdón" style="display: block; margin: 0 auto;">
+  
+  <div class="message">¿ME PERDONAS MI AMORCITA HERMOSA??</div>
+  
+  <div class="buttons">
+    <a href="#" id="yesButton" class="button">Sí</a>
+    <a href="#" id="noButton" class="button no">No</a>
+  </div>
+
+  <script>
+    // Al hacer clic en el botón "Sí"
+    document.getElementById('yesButton').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita que se siga el enlace
+      // Abre una nueva ventana con el mensaje y el nuevo GIF
+      window.open('data:text/html,<html><body style="text-align: center; font-family: Arial, sans-serif;"><h1>Gracias mi amorcito, te amo y te amaré siempre 💖</h1><img src="https://i.imgur.com/a5aJQvU.gif" alt="Te Amo GIF" style="width: 200px;"><br><p>Te amo muchísimo!</p></body></html>', '_blank');
+    });
+
+    // Al hacer clic en el botón "No"
+    let noButtonClickCount = 0; // Contador para aumentar el tamaño de la letra en "No"
+    
+    document.getElementById('noButton').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita que se siga el enlace
+      // Abre una nueva ventana con el mensaje y el nuevo GIF de "No"
+      window.open('data:text/html,<html><body style="text-align: center; font-family: Arial, sans-serif;"><h1>¿Segura?</h1><img src="https://i.imgur.com/wXq6hIn.gif" alt="Seguro GIF" style="width: 200px;"><br><div class="buttons"><a href="#" id="yesButton" class="button">Sí</a><a href="#" id="noButton" class="button no" style="font-size: ' + (18 + noButtonClickCount * 5) + 'px;">No</a></div></body></html>', '_blank');
+      
+      // Aumenta el contador y el tamaño de la fuente
+      noButtonClickCount++;
+    });
+  </script>
 </body>
 </html>
