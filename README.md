@@ -58,11 +58,9 @@
     
     document.getElementById('noButton').addEventListener('click', function(event) {
       event.preventDefault(); // Evita que se siga el enlace
+      noButtonClickCount++; // Aumenta el contador
       // Abre una nueva ventana con el mensaje y el nuevo GIF de "No"
       window.open('data:text/html,<html><body style="text-align: center; font-family: Arial, sans-serif;"><h1>¿Segura?</h1><img src="https://i.imgur.com/wXq6hIn.gif" alt="Seguro GIF" style="width: 200px;"><br><div class="buttons"><a href="#" id="yesButton" class="button">Sí</a><a href="#" id="noButton" class="button no" style="font-size: ' + (18 + noButtonClickCount * 5) + 'px;">No</a></div></body></html>', '_blank');
-      
-      // Aumenta el contador y el tamaño de la fuente
-      noButtonClickCount++;
     });
   </script>
 </body>
